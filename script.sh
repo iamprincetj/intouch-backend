@@ -1,3 +1,3 @@
 npm run migration:up
 
-npm run start
+npm run dev

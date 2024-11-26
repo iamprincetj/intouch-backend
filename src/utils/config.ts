@@ -1,8 +1,9 @@
 require('dotenv').config();
 
 const NODE_ENV = process.env.NODE_ENV;
+console.log(process.env.PORT);
 
-const DATABASE_URL = NODE_ENV === 'production' ? process.env.DATABASE_URL_PROD : process.env.DATABASE_URL_DEV;
+const DATABASE_URL = NODE_ENV === 'development' ? process.env.DATABASE_URL_DEV : process.env.DATABASE_URL_PROD;
 const PORT = process.env.PORT;
 const JWT_SECRET = process.env.JWT_SECRET;
 
