@@ -1,3 +1,5 @@
 npm run migration:up
 
-npm run dev
+npm run build
+
+npm run start
