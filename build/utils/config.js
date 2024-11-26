@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.JWT_SECRET = exports.PORT = exports.DATABASE_URL = void 0;
+require('dotenv').config();
+const DATABASE_URL = process.env.DATABASE_URL;
+exports.DATABASE_URL = DATABASE_URL;
+const PORT = process.env.PORT;
+exports.PORT = PORT;
+const JWT_SECRET = process.env.JWT_SECRET;
+exports.JWT_SECRET = JWT_SECRET;
