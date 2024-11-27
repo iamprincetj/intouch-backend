@@ -4,8 +4,8 @@
   "description": "Backend for my-classmates",
   "main": "index.ts",
   "scripts": {
-    "start": "NODE_ENV=production node build/index.js",
-    "dev": "NODE_ENV=production ts-node-dev src/index.ts",
+    "start": "node build/src/index.js",
+    "dev": "ts-node-dev src/index.ts",
     "build": "tsc",
     "ts-node": "ts-node",
     "migration:up": "ts-node src/utils/runMigration.ts",

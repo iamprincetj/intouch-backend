@@ -16,7 +16,6 @@ const config_1 = require("./config");
 const umzug_1 = require("umzug");
 const sequelize = new sequelize_1.Sequelize(config_1.DATABASE_URL, {
     dialect: 'postgres',
-    host: 'localhost'
 });
 exports.sequelize = sequelize;
 // const sequelize = new Sequelize(DATABASE_URL, {
@@ -47,7 +46,7 @@ const runMigrations = () => __awaiter(void 0, void 0, void 0, function* () {
     const migrator = new umzug_1.Umzug(migrationConf);
     const migrations = yield migrator.up();
     console.log('Migrations up to date', {
-        files: migrations.map((mig) => mig.name)
+        files: migrations.map((mig) => mig.name),
     });
 });
 exports.runMigrations = runMigrations;
